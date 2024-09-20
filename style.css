@@ -11,6 +11,19 @@ body {
   height: 100%;
   width: 100%;
 }
+
+#crsr {
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  /* background-color: #fff; */
+  border: 1px solid #ffffffbe;
+  position: fixed;
+  z-index: 999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
 #loader {
   height: 100%;
   width: 100%;
@@ -29,23 +42,27 @@ body {
   justify-content: flex-start;
   gap: 3vw;
 }
+
 #line1-part1 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1vw;
 }
+
 #line1-part1 h5,
 #line1-part1 h6 {
   font-size: 3vw;
   font-weight: 100;
   font-family: "silk serif";
 }
+
 #line1-part1 h5 {
   /* background-color: red; */
   width: 5vw;
   text-align: right;
 }
+
 .line h1 {
   font-size: 6.5vw;
   text-transform: uppercase;
@@ -118,8 +135,8 @@ body {
 }
 
 #nav-part2 h4 {
-  font-size: 0.8vw;
-  font-weight: 500;
+  font-size: 1.1vw;
+  font-weight: 600;
 }
 
 .hero {

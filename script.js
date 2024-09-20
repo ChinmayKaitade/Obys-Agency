@@ -48,5 +48,16 @@ function loadingAnimation() {
     display: "none",
   });
 }
-
 loadingAnimation();
+
+function cursorAnimation() {
+  document.addEventListener("mousemove", (dets) => {
+    gsap.to("#crsr", {
+      left: dets.x,
+      top: dets.y,
+    });
+  });
+
+  Shery.makeMagnet("#nav-part2 h4");
+}
+cursorAnimation();
