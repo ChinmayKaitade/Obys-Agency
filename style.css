@@ -8,10 +8,9 @@
 
 html,
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
-
 #loader {
   height: 100%;
   width: 100%;
@@ -22,6 +21,7 @@ body {
 }
 
 .line {
+  /* background-color: red; */
   height: fit-content;
   overflow: hidden;
   display: flex;
@@ -29,34 +29,31 @@ body {
   justify-content: flex-start;
   gap: 3vw;
 }
-
 #line1-part1 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1vw;
 }
-
 #line1-part1 h5,
 #line1-part1 h6 {
   font-size: 3vw;
   font-weight: 100;
   font-family: "silk serif";
 }
-
 #line1-part1 h5 {
+  /* background-color: red; */
   width: 5vw;
   text-align: right;
 }
-
 .line h1 {
   font-size: 6.5vw;
-  font-weight: 900;
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 .line h2 {
-  font-size: 5.5vw;
+  font-size: 5vw;
   text-transform: uppercase;
   font-weight: 900;
   opacity: 0;
@@ -66,38 +63,37 @@ body {
 
 @keyframes anime {
   0% {
-    font-family: "Plain Light";
+    font-family: "plain light";
     -webkit-text-stroke: 1px #fff;
     color: #fff;
     font-weight: 500;
     opacity: 1;
   }
-  47% {
-    font-family: "Plain Light";
+  48% {
+    font-family: "plain light";
     -webkit-text-stroke: 1px #fff;
     color: #fff;
     font-weight: 500;
     opacity: 0;
   }
   50% {
-    font-family: "Silk serif";
+    font-family: "silk serif";
     -webkit-text-stroke: 1px #fff;
-    color: transparent;
     font-weight: 500;
+    color: transparent;
     opacity: 1;
   }
   100% {
-    font-family: "Silk serif";
+    font-family: "silk serif";
     -webkit-text-stroke: 1px #fff;
-    color: transparent;
     font-weight: 500;
+    color: transparent;
     opacity: 0;
   }
 }
 
 #main {
   position: relative;
-  /* background-color: #111; */
   background-color: #030303;
 }
 
@@ -105,4 +101,40 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #151515;
+}
+
+#page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 5.5vw;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+#nav-part2 h4 {
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.hero {
+  /* background-color: red; */
+  width: 72%;
+  margin-left: 27%;
+}
+
+.hero:nth-child(2) {
+  margin-top: 16vh;
+}
+
+.hero h1 {
+  font-size: 7.2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 7.2vw;
 }
